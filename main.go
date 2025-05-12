@@ -24,7 +24,7 @@ func main() {
 	r.HandleFunc("/login", LoginUserHandler).Methods("POST")
 
 	r.HandleFunc("/accounts", CreateAccountHandler).Methods("POST")
-	r.HandleFunc("/users/{userId}/accounts",??? GetUserAccountsHandler).Methods("GET")
+	r.HandleFunc("/users/{userId}/accounts", GetUserAccountsHandler).Methods("GET")
 
 	r.HandleFunc("/cards", GenerateCardHandler).Methods("POST")
 	r.HandleFunc("/accounts/{accountId}/cards", GetAccountCardsHandler).Methods("GET")
